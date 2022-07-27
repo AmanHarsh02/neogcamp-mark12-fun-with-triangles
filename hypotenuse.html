@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hypotenuse</title>
-    <link href="/styles.css" rel="stylesheet"/>
+    <link href="/styles.css" rel="stylesheet" />
 </head>
+
 <body>
     <nav class="navigation-bar">
         <a href="/index.html">Is Triangle?</a>
@@ -14,5 +16,22 @@
         <a href="/hypotenuse.html">Hypotenuse</a>
         <a href="/area.html">Area</a>
     </nav>
+
+    <div class="container-div">
+        <h1 class="heading">Check Hypotenuse</h1>
+        <h2 class="description"> Length of Hypotenuse = sqrt(a² + b²)</h2>
+
+        <label>a =</label>
+        <input type="number" class="side-inputs">
+        <label>b =</label>
+        <input type="number" class="side-inputs">
+
+        <button id="check-hypotenuse-btn">Check Hypotenuse</button>
+
+        <div id="output-div"></div>
+    </div>
+
+    <script src="/hypotenuse.js" type="text/javascript"></script>
 </body>
+
 </html>
