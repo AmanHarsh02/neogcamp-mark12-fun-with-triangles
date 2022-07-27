@@ -1,37 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Is Triangle?</title>
-    <link href="/styles.css" rel="stylesheet"/>
+    <link href="/styles.css" rel="stylesheet" />
 </head>
+
 <body>
     <nav class="navigation-bar">
-        <a href="/index.html">Is Triangle?</a>
-        <a href="/quiz.html">Quiz</a>
-        <a href="/hypotenuse.html">Hypotenuse</a>
-        <a href="/area.html">Area</a>
+        <a class="link-nav active" href="/index.html">Is Triangle?</a>
+        <a class="link-nav" href="/quiz.html">Quiz</a>
+        <a class="link-nav" href="/hypotenuse.html">Hypotenuse</a>
+        <a class="link-nav" href="/area.html">Area</a>
     </nav>
 
     <div class="container-div">
         <h1 class="heading">Is Triangle?</h1>
 
-        <label for="angle1">Angle 1</label>
-        <input type="number" class="angle-input">
+        <div class="input-container">
+            <label for="angle1">Angle 1(in degrees)</label>
+            <input type="number" class="angle-input">
+        </div>
 
-        <label for="angle2">Angel 2</label>
-        <input type="number" class="angle-input">
+        <div class="input-container">
+            <label for="angle2">Angle 2(in degrees)</label>
+            <input type="number" class="angle-input">
+        </div>
 
-        <label for="angle3">Angel 3</label>
-        <input type="number" class="angle-input">
+        <div class="input-container">
+            <label for="angle3">Angle 3(in degrees)</label>
+            <input type="number" class="angle-input">
+        </div>
 
         <button id="is-triangle-btn">Is Triangle?</button>
 
         <div id="output-div"></div>
     </div>
 
+    <footer class="footer">
+        <p>If you enjoyed this fun with triangles app, check out my other projects too! <a class="link"
+                href="https://amanharsh.netlify.app/projects.html" target="_blank">Click here</a> to see my other
+            projects.</p>
+
+        <div class="footer-header">Connect to me on my socials</div>
+        <ul>
+            <li class="list-item-inline">
+                <a class="social-link" href="https://github.com/AmanHarsh02" target="_blank">
+                    GitHub
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="social-link" href="https://linkedin.com/in/aman-harsh" target="_blank">
+                    LinkedIn
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="social-link" href="https://twitter.com/amanharsh0203" target="_blank">
+                    Twitter
+                </a>
+            </li>
+        </ul>
+    </footer>
+
     <script src="/isTriangle.js" type="text/javascript"></script>
 </body>
+
 </html>

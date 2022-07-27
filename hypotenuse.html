@@ -11,25 +11,55 @@
 
 <body>
     <nav class="navigation-bar">
-        <a href="/index.html">Is Triangle?</a>
-        <a href="/quiz.html">Quiz</a>
-        <a href="/hypotenuse.html">Hypotenuse</a>
-        <a href="/area.html">Area</a>
+        <a class="link-nav" href="/index.html">Is Triangle?</a>
+        <a class="link-nav" href="/quiz.html">Quiz</a>
+        <a class="link-nav active" href="/hypotenuse.html">Hypotenuse</a>
+        <a class="link-nav" href="/area.html">Area</a>
     </nav>
 
     <div class="container-div">
         <h1 class="heading">Check Hypotenuse</h1>
         <h2 class="description"> Length of Hypotenuse = sqrt(a² + b²)</h2>
 
-        <label>a =</label>
-        <input type="number" class="side-inputs">
-        <label>b =</label>
-        <input type="number" class="side-inputs">
+        <div class="input-container">
+            <label>a =</label>
+            <input type="number" class="side-inputs">
+        </div>
+
+        <div class="input-container">
+            <label>b =</label>
+            <input type="number" class="side-inputs">
+        </div>
 
         <button id="check-hypotenuse-btn">Check Hypotenuse</button>
 
         <div id="output-div"></div>
     </div>
+
+    <footer class="footer">
+        <p>If you enjoyed this fun with triangles app, check out my other projects too! <a class="link"
+                href="https://amanharsh.netlify.app/projects.html" target="_blank">Click here</a> to see my other
+            projects.</p>
+
+        <div class="footer-header">Connect to me on my socials</div>
+        <ul>
+            <li class="list-item-inline">
+                <a class="social-link" href="https://github.com/AmanHarsh02" target="_blank">
+                    GitHub
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="social-link" href="https://linkedin.com/in/aman-harsh" target="_blank">
+                    LinkedIn
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="social-link" href="https://twitter.com/amanharsh0203" target="_blank">
+                    Twitter
+                </a>
+            </li>
+        </ul>
+    </footer>
 
     <script src="/hypotenuse.js" type="text/javascript"></script>
 </body>

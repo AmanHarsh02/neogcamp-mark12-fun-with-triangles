@@ -11,10 +11,10 @@
 
 <body>
     <nav class="navigation-bar">
-        <a href="/index.html">Is Triangle?</a>
-        <a href="/quiz.html">Quiz</a>
-        <a href="/hypotenuse.html">Hypotenuse</a>
-        <a href="/area.html">Area</a>
+        <a class="link-nav" href="/index.html">Is Triangle?</a>
+        <a class="link-nav active" href="/quiz.html">Quiz</a>
+        <a class="link-nav" href="/hypotenuse.html">Hypotenuse</a>
+        <a class="link-nav" href="/area.html">Area</a>
     </nav>
 
     <div class="container-div">
@@ -26,18 +26,18 @@
 					What is the third angle for the triangle where angle1 = 45° and angle2
 					= 45°?
 				</p>
-                <label><input type="radio" name="question-one" value="45°">45°</label>
-                <label><input type="radio" name="question-one" value="60°">60°</label>
-                <label><input type="radio" name="question-one" value="90°">90°</label>
+                <label class="radio-inputs"><input type="radio" name="question-one" value="45°">45°</label>
+                <label class="radio-inputs"><input type="radio" name="question-one" value="60°">60°</label>
+                <label class="radio-inputs"><input type="radio" name="question-one" value="90°">90°</label>
             </div>
 
             <div class="quiz-container">
                 <p>
                     If a triangle has an angle of 90 degrees, what is it called?
                 </p>
-                <label><input type="radio" name="question-two" value="obtuse">obtuse</label>
-                <label><input type="radio" name="question-two" value="acute ">acute </label>
-                <label><input type="radio" name="question-two" value="right angled">right angled</label>
+                <label class="radio-inputs"><input type="radio" name="question-two" value="obtuse">obtuse</label>
+                <label class="radio-inputs"><input type="radio" name="question-two" value="acute ">acute </label>
+                <label class="radio-inputs"><input type="radio" name="question-two" value="right angled">right angled</label>
             </div>
         </form>
 
@@ -45,6 +45,29 @@
 
         <div id="output-div"></div>
     </div>
+
+    <footer class="footer">
+        <p>If you enjoyed this fun with triangles app, check out my other projects too! <a class="link" href="https://amanharsh.netlify.app/projects.html" target="_blank">Click here</a> to see my other projects.</p>
+
+        <div class="footer-header">Connect to me on my socials</div>
+        <ul>
+            <li class="list-item-inline">
+                <a class="social-link" href="https://github.com/AmanHarsh02" target="_blank">
+                    GitHub
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="social-link" href="https://linkedin.com/in/aman-harsh" target="_blank">
+                    LinkedIn
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="social-link" href="https://twitter.com/amanharsh0203" target="_blank">
+                    Twitter
+                </a>
+            </li>
+        </ul>
+    </footer>
 
     <script src="/quiz.js" type="text/javascript"></script>
 </body>
