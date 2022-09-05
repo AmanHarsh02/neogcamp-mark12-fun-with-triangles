@@ -11,10 +11,14 @@ function calculateSumOfSquares(a, b) {
 function calculateHypotenuse() {
 
     if (sideInputs[0].value && sideInputs[1].value) {
-        const sum = calculateSumOfSquares(Number(sideInputs[0].value), Number(sideInputs[1].value));
-        const hypotenuse = Math.sqrt(sum);
+        if(sideInputs[0].value < 0 || sideInputs[1].value < 0) {
+            output.innerText = "Please be positive & enter positive values 😀"
+        } else {
+            const sum = calculateSumOfSquares(Number(sideInputs[0].value), Number(sideInputs[1].value));
+            const hypotenuse = Math.sqrt(sum);
 
-        output.innerText = "The length of the Hypotenuse is " + hypotenuse + " cm."
+            output.innerText = "The length of the Hypotenuse is " + hypotenuse + " cm."
+        }
     } else {
         output.innerText = "Please enter the length for both the sides."
     }
