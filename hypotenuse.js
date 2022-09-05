@@ -17,7 +17,7 @@ function calculateHypotenuse() {
             const sum = calculateSumOfSquares(Number(sideInputs[0].value), Number(sideInputs[1].value));
             const hypotenuse = Math.sqrt(sum);
 
-            output.innerText = "The length of the Hypotenuse is " + hypotenuse + " cm."
+            output.innerText = "The length of the Hypotenuse is " + hypotenuse.toFixed(2) + " cm."
         }
     } else {
         output.innerText = "Please enter the length for both the sides."

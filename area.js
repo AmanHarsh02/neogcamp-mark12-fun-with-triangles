@@ -10,7 +10,7 @@ function calculateArea() {
         } else {
             const area = (Number(sideInputs[0].value) * Number(sideInputs[1].value)) / 2;
 
-            output.innerText = "The area of the triangle is " + area + " cm²";
+            output.innerText = "The area of the triangle is " + area.toFixed(2) + " cm²";
         }
         
     } else {
